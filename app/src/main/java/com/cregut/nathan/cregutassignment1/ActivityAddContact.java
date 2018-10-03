@@ -6,25 +6,25 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity {
+public class ActivityAddContact extends AppCompatActivity {
 
-    private Button button;
+    private Button listButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_add_contact);
 
-        button = findViewById(R.id.button2);
-        button.setOnClickListener(new View.OnClickListener() {
+        listButton = findViewById(R.id.button4);
+        listButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openActivityList();
+                openListScreen();
             }
         });
     }
 
-    public void openActivityList() {
+    public void openListScreen() {
         Intent intent = new Intent(this, ActivityList.class);
         startActivity(intent);
     }
