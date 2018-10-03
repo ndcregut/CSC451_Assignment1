@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">CregutAssignment1</string>
+    <string name="to_do_list">To Do List</string>
+    <string name="todo_1">ToDo 1</string>
+    <string name="add_new_todo_list">Add New ToDo List</string>
+    <string name="back_to_home">Back To Home</string>
 </resources>
